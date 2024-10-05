@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main_menu { 
+            margin: 10px; 
+            padding: 0; 
+            list-style: none;
+            font-size: 24px; 
+            width: 200px; 
+            background: #eee; 
+            cursor: pointer;
+        }
+        #mian_menu li {
+            margin-bottom: 10px; 
+            padding: 5px;
+        }
+        #main_menu li:hover {
+            background: #FF4EF5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Делегирования событий</h1>
+    <p><input type="button" data-toggle-id="main_menu" value="Показать/Скрыть меню"></p>
+    <p><a href="ex1.htm" onclick="return false;" data-toggle-id="main_menu" >Показать/Скрыть меню</a></p>
+    <ul id="main_menu">
+        <li data-command="open">Открыть</li>
+        <li data-command="save">Сохранить</li>
+        <li data-command="draw">Рисовать</li> 
+        <li data-command="edit">Редактировать</li>
+        <li data-command="customize">Настройки</li>
+    </ul>
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

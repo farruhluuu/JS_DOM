@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td[cell-red="#CC0000"]{
+            background: #CC0000;
+        }
+        td[cell-red="lightRed"]{
+            background: #FF9999;
+        }
+        td[data-cell-red="#CC0000"]{
+            background: #CC0000;
+        }
+        td[data-cell-red="lightRed"]{
+            background: #FF9999;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="comm" deflt="значения">Сообщения</div> -->
+
+
+    <!-- <table>
+        <tr>
+            <td cell-red="#CC0000">1</td><td cell-blue="#0000CC">2</td>
+            <td cell-red="#CC0000">3</td><td cell-blue="#0000CC">4</td>
+        </tr>
+        <tr>
+            <td cell-blue="#0000CC">5</td><td cell-red="#CC0000">6</td>
+            <td cell-blue="#0000CC">7</td><td cell-red="#CC0000">8</td>
+        </tr>
+    </table>
+ -->
+    <table>
+        <tr>
+            <td data-cell-red="#CC0000">1</td>
+            <td data-cell-blue="#0000CC">2</td>
+            <td data-cell-red="#CC0000">3</td>
+            <td data-cell-blue="#0000CC">4</td>
+        </tr>
+        <tr>
+            <td data-cell-blue="#0000CC">6</td>
+            <td data-cell-red="#CC0000">5</td>
+            <td data-cell-blue="#0000CC">8</td>
+            <td data-cell-red="#CC0000">7</td>
+        </tr>
+    </table>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
